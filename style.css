@@ -48,6 +48,7 @@ form select option {
   outline: none;
   transition: all 0.5s;
   border: none;
+  box-shadow: 2px 2px 0 #b4b4b4, -2px -2px 0 #b9b9b9;
 }
 form > input {
   margin: 2vmax;
@@ -61,12 +62,13 @@ form > input {
   font-size: 1.4vmax;
   font-family: "Roboto Mono";
   outline: none;
+  box-shadow: 2px 2px 0 #474747, -2px -2px 0 #535353;
 }
 
 form > select:hover {
-  box-shadow: 0 0 10px white;
+  box-shadow: inset 2px 2px 1px #b4b4b4, inset -2px -2px 1px #b9b9b9;
 }
 form > input:hover {
-  background-color: rgb(77, 77, 77);
-  box-shadow: 0 0 10px white;
+  background-color: rgb(32, 32, 32);
+  box-shadow: inset 2px 2px 1px #474747, inset -2px -2px 1px #535353;
 }
