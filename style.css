@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .myGame {
@@ -25,7 +26,7 @@ canvas {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.158);
+  background-color: rgba(34, 34, 34, 0.5);
   height: 60vh;
   width: 60vw;
   position: absolute;
@@ -48,10 +49,10 @@ form select option {
   outline: none;
   transition: all 0.5s;
   border: none;
-  box-shadow: 2px 2px 0 #b4b4b4, -2px -2px 0 #b9b9b9;
+  /* box-shadow: 2px 2px 0 #b4b4b4, -2px -2px 0 #b9b9b9; */
 }
 form > input {
-  margin: 2vmax;
+  /* margin: 1vmax; */
   padding: 2vmax;
   width: 20vw;
   cursor: pointer;
@@ -62,7 +63,7 @@ form > input {
   font-size: 1.4vmax;
   font-family: "Roboto Mono";
   outline: none;
-  box-shadow: 2px 2px 0 #474747, -2px -2px 0 #535353;
+  /* box-shadow: 2px 2px 0 #474747, -2px -2px 0 #535353; */
 }
 
 form > select:hover {
@@ -71,4 +72,40 @@ form > select:hover {
 form > input:hover {
   background-color: rgb(32, 32, 32);
   box-shadow: inset 2px 2px 1px #474747, inset -2px -2px 1px #535353;
+}
+
+.gameover {
+  background-color: rgba(122, 122, 122, 0.041);
+  border-radius: 5px;
+  position: fixed;
+  top: 45%;
+  height: 100vh;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameover > button {
+  padding: 1vmax;
+  border: 2px solid rgb(88, 88, 88);
+  cursor: pointer;
+  width: 10vw;
+  background-color: rgb(206, 206, 206);
+  font: 900 1.1vmax "Roboto Mono";
+  transition: all 0.5s;
+}
+.gameover > button:hover {
+  background-color: rgb(30, 30, 34);
+  color: white;
+  box-shadow: inset 2px 2px 1px #474747, inset -2px -2px 1px #535353;
+}
+
+.gameover > div {
+  margin: 2vmax;
+  color: white;
+  font: 600 1.2vmax "Roboto Mono";
 }
