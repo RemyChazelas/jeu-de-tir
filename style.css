@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.myGame {
+  height: 100vh;
+}
+
+canvas {
+  background-color: rgb(32, 32, 32);
+  max-width: 100%;
+  cursor: crosshair;
+}
