@@ -49,10 +49,8 @@ form select option {
   outline: none;
   transition: all 0.5s;
   border: none;
-  /* box-shadow: 2px 2px 0 #b4b4b4, -2px -2px 0 #b9b9b9; */
 }
 form > input {
-  /* margin: 1vmax; */
   padding: 2vmax;
   width: 20vw;
   cursor: pointer;
@@ -63,7 +61,6 @@ form > input {
   font-size: 1.4vmax;
   font-family: "Roboto Mono";
   outline: none;
-  /* box-shadow: 2px 2px 0 #474747, -2px -2px 0 #535353; */
 }
 
 form > select:hover {
@@ -108,4 +105,18 @@ form > input:hover {
   margin: 2vmax;
   color: white;
   font: 600 1.2vmax "Roboto Mono";
+}
+
+p {
+  margin-top: 2vmax;
+  color: white;
+  font: 500 1.1vmax "Roboto Mono";
+  letter-spacing: -0.5px;
+}
+
+p a {
+  margin-top: 2vmax;
+  color: white;
+  font: 700 1.1vmax "Roboto Mono";
+  text-decoration: none;
 }

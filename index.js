@@ -165,7 +165,7 @@ class HugeWeapon {
     constructor(x, y) {
         this.x = x;
         this.y = y;
-        this.color = "rgba(255,0,133,1)";
+        this.color = "chartreuse";
     }
 
     draw() {
@@ -312,7 +312,7 @@ function animation() {
     scoreBoard.innerHTML = `Score : ${playerScore}`;
 
     // Clearing canvas on each frame
-    context.fillStyle = "rgba(49, 49, 49,0.2)";
+    context.fillStyle = "rgba(45, 45, 45,0.2)";
 
     context.fillRect(0, 0, canvas.width, canvas.height);
 
